@@ -1,0 +1,225 @@
+:root {
+  --bg: #f4f7fb;
+  --card-bg: #ffffff;
+  --text: #14213d;
+  --muted: #5f6c85;
+  --primary: #1f6feb;
+  --primary-dark: #1654b6;
+  --border: #dbe4f0;
+  --success: #157347;
+  --panel-bg: #f7faff;
+  --panel-item: #eef4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f8faff 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+}
+
+.hero p {
+  margin: 0.5rem 0 1.5rem;
+  color: var(--muted);
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.services-panel {
+  position: sticky;
+  top: 1rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.85rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+}
+
+.panel-head h2 {
+  margin: 0.2rem 0 0.75rem;
+  font-size: 1rem;
+}
+
+.panel-label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.services-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.service-item {
+  border: 1px solid var(--border);
+  background: var(--panel-item);
+  border-radius: 10px;
+  padding: 0.55rem 0.6rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.service-item:hover {
+  border-color: #afc6ee;
+  transform: translateY(-1px);
+}
+
+.service-item.active {
+  border-color: var(--primary);
+  background: #e5efff;
+}
+
+.service-item strong {
+  display: block;
+  font-size: 0.86rem;
+  color: #1a2946;
+}
+
+.service-item span {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.job-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(20, 33, 61, 0.08);
+  overflow: hidden;
+}
+
+.job-card.active-card {
+  border-color: #8db3f5;
+  box-shadow: 0 14px 30px rgba(31, 111, 235, 0.17);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem 1rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  background: #f8fbff;
+}
+
+.label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.service-name {
+  margin: 0.25rem 0 0;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.copy-section {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.section-top h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.section-content {
+  margin: 0.5rem 0 0;
+  color: #1f2a40;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.copy-btn {
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 0.83rem;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  background: var(--primary);
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.copy-btn:hover {
+  background: var(--primary-dark);
+}
+
+.copy-btn:active {
+  transform: translateY(1px);
+}
+
+.copy-btn.copied {
+  background: var(--success);
+}
+
+@media (max-width: 640px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .services-panel {
+    position: static;
+    max-height: none;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copy-btn {
+    width: 100%;
+  }
+}
