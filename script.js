@@ -153,7 +153,7 @@ const VACANTES = [
     puesto: "JEFE DE TURNO",
     ubicacion: "Av. Miguel Alemán, Apodaca.",
     salarioYPrestaciones:
-      "Salario mensual libre: $15,500. Salario semanal libre: $3,616.67. El primer pago se realiza la siguiente semana (se labora lunes a domingo y se paga el viernes de la segunda semana laborada). Prestaciones de ley: IMSS, INFONAVIT, aguinaldo (15 días), vacaciones (primer año 12 días).",
+      "Salario mensual libre: $17,500. Salario semanal libre: $4,166.67. El primer pago se realiza la siguiente semana (se labora lunes a domingo y se paga el viernes de la segunda semana laborada). Prestaciones de ley: IMSS, INFONAVIT, aguinaldo (15 días), vacaciones (primer año 12 días).",
     beneficiosAdicionales:
       "Crédito FONACOT. Uniforme (2 juegos): camisola, pantalón cargo, zapato industrial y chaleco rojo; se renueva cada 6 meses. Fondo de ahorro: colaborador aporta $50 semanales y la empresa agrega $25 semanales; se entrega en mayo al cumplir un año laboral.",
     bonosYApoyos:
