@@ -191,7 +191,7 @@ const VACANTES = [
     puesto: "OFICIAL",
     ubicacion: "Av. Miguel Alemán, Apodaca.",
     salarioYPrestaciones:
-      "Salario mensual libre: $14,000. Salario semanal libre: $3,266.66. El primer pago se realiza la siguiente semana (se labora lunes a domingo y se paga el viernes de la segunda semana laborada). Prestaciones de ley: IMSS, INFONAVIT, aguinaldo (15 días), vacaciones (primer año 12 días).",
+      "Salario semanal libre: $3,546.67. El primer pago se realiza la siguiente semana (se labora lunes a domingo y se paga el viernes de la segunda semana laborada). Prestaciones de ley: IMSS, INFONAVIT, aguinaldo (15 días), vacaciones (primer año 12 días).",
     beneficiosAdicionales:
       "Crédito FONACOT. Uniforme (2 juegos): camisola, pantalón cargo, zapato industrial y chaleco azul; se renueva cada 6 meses. Fondo de ahorro: colaborador aporta $50 semanales y la empresa agrega $25 semanales; se entrega en mayo al cumplir un año laboral.",
     bonosYApoyos:
